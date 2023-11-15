@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="679dp"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="BIENVENIDOS A CASA"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_location"
+                android:text="Ciudad: Talca\n 25°C"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_brightness_7_24" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/baseline_add_home_24"
+            android:hint="Dispositivos"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="182dp"
+                android:layout_height="117dp"
+                android:drawableStart="@drawable/baseline_king_bed_24"
+                android:hint="Habitacion"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:background="#00FFFFFF"
+                android:drawableLeft="@drawable/baseline_add_24"
+                android:hint="Añadir"
+                android:textColorHint="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:id="@+id/btncerrar"
+            android:hint="Cerrar"
+            android:textColorHint="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+
+    </LinearLayout>
+</LinearLayout>
